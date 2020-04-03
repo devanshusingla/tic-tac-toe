@@ -1,0 +1,105 @@
+/*body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*/
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  color: #ddd;
+  margin: 20px;
+  background-color: rgb(102, 57, 96);
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row {
+  display: flex;
+/*  background-color: blue;*/
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width:100% ;
+  height: 30%;
+  justify-content: space-evenly ;
+  align-content: center;
+}
+
+.status {
+  font: min(5vh, 5vw) "bookman oldstyle";
+  position: absolute;
+  top: calc(50% + min(30vh, 30vw));
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.square {
+  background: rgb(22, 0, 32);
+  font: 50px sans-serif ;
+  color: blanchedalmond;
+  border: thick solid #999;
+  border-radius: 20%;
+  width: 30% ;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-turns {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  height: 60vh;
+  width: 25vw;
+  /*background-color: #ddd;*/
+  justify-content: left;
+}
+
+.turn {
+  background-color: bisque;
+  border: thick solid rgb(18, 0, 26);
+  border-radius: 10%;
+  height: 8%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(56, 25, 4);
+  font-size: x-large;
+  text-align: center;
+}
+
+.board {
+  position: fixed;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%) ;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: min(50vh, 50vw);
+  width: min(50vh, 50vw);
+  justify-content: space-evenly;
+
+  /*background-color: blanchedalmond;*/
+}
